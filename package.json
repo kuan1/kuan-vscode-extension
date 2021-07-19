@@ -102,5 +102,9 @@
     "ts-loader": "^9.2.2",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuan1/kuan-vscode-extension.git"
   }
 }
