@@ -1,0 +1,56 @@
+{
+  "View": {
+    "prefix": "View",
+    "body": ["<View>$1</View>"],
+    "description": "taro view"
+  },
+  "taroReact": {
+    "prefix": "taroReact",
+    "body": [
+      "import React, { Component } from \"react\";",
+      "import { View } from \"@tarojs/components\";",
+      "",
+      "class Index extends Component {",
+      "  login() {",
+      "    console.log('login');",
+      "  }",
+      "  render() {",
+      "    return (",
+      "      <View>",
+      "        <View>首页</View>",
+      "      </View>",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "export default Index;"
+    ]
+  },
+  "taroRedux": {
+    "prefix": "taroRedux",
+    "body": [
+      "import React, { Component } from \"react\";",
+      "import { View } from \"@tarojs/components\";",
+      "import { connect } from \"react-redux\";",
+      "",
+      "import { to } from \"@/utils/router\";",
+      "",
+      "@connect(({ user }) => ({ user }))",
+      "class Index extends Component {",
+      "  login() {",
+      "    to({ name: \"login\" });",
+      "  }",
+      "  render() {",
+      "    return (",
+      "      <View>",
+      "        <View>首页</View>",
+      "      </View>",
+      "    );",
+      "  }",
+      "}",
+      "",
+      "export default Index;",
+      ""
+    ]
+  }
+}

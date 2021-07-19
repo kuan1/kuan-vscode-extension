@@ -20,6 +20,20 @@
         "title": "Hello World"
       }
     ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/taro.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/vue-html.json"
+      }
+    ],
     "keybindings": [
       {
         "key": "shift+cmd+k",
