@@ -53,7 +53,7 @@
       },
       {
         "key": "alt+cmd+s",
-        "command": "-workbench.action.files.saveAll"
+        "command": "workbench.action.files.save"
       },
       {
         "command": "workbench.action.openEditorAtIndex1",
