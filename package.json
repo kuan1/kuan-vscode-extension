@@ -2,6 +2,7 @@
   "name": "kuan-vscode",
   "displayName": "kuan vscode",
   "description": "hello vscode extension",
+  "icon": "images/logo.jpeg",
   "version": "0.0.1",
   "publisher": "luzhongkuan",
   "engines": {
