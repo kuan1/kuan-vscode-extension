@@ -3,7 +3,7 @@
   "displayName": "kuan vscode",
   "description": "hello vscode extension",
   "icon": "images/logo.jpeg",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "luzhongkuan",
   "engines": {
     "vscode": "^1.58.0"
@@ -41,6 +41,10 @@
       {
         "key": "shift+cmd+k",
         "command": "git.sync"
+      },
+      {
+        "key": "cmd+r",
+        "command": "editor.action.startFindReplaceAction"
       },
       {
         "key": "cmd+d",
