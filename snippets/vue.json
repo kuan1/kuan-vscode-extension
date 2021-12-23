@@ -1,6 +1,6 @@
 {
-  "templatesetup": {
-    "prefix": "templatesetup",
+  "vuesetup": {
+    "prefix": "vuesetup",
     "body": [
       "<template>",
       "  <div>",
@@ -9,6 +9,7 @@
       "</template>",
       "",
       "<script lang=\"tsx\" setup>",
+      "import {$2} from 'vue'",
       "",
       "</script>",
       "",
