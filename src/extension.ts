@@ -1,25 +1,53 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
+import {dirname} from 'path'
 import * as vscode from 'vscode'
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
-export function activate(context: vscode.ExtensionContext) {
-  // Use the console to output diagnostic information (console.log) and errors (console.error)
-  // This line of code will only be executed once when your extension is activated
-  console.log('Congratulations, your extension "kuan-vscode" is now active!')
+import { goods3Command, terminalMapping } from './goods3/goods3Command'
 
-  // The command has been defined in the package.json file
-  // Now provide the implementation of the command with registerCommand
-  // The commandId parameter must match the command field in package.json
+export function activate(context: vscode.ExtensionContext) {
+  console.log('kuan-vscode activate')
+
+  // Hello World
   let disposable = vscode.commands.registerCommand('kuan-vscode.helloWorld', () => {
-    // The code you place here will be executed every time your command is executed
-    // Display a message box to the user
     vscode.window.showInformationMessage('Hello vscode World from kuan vscode!')
   })
+  context.subscriptions.push(disposable);
 
-  context.subscriptions.push(disposable)
+  // 商品3.0命令，循环依赖
+  disposable = vscode.commands.registerCommand('kuan-vscode.goods3', () => {
+    const filePath = vscode.window.activeTextEditor?.document.uri.fsPath
+    if (filePath) {
+      goods3Command(filePath)
+    } else {
+      vscode.window.showWarningMessage('没有找到活跃文件')
+    }
+  })
+  context.subscriptions.push(disposable);
+
+  // 指定目录修改
+  disposable = vscode.commands.registerCommand('kuan-vscode.goods3TransofromFolder', () => {
+    const filePath = vscode.window.activeTextEditor?.document.uri.fsPath
+    if (filePath) {
+      goods3Command(`-m 1 ${dirname(filePath)}`)
+    } else {
+      vscode.window.showWarningMessage('没有找到活跃文件')
+    }
+  })
+  context.subscriptions.push(disposable);
+
+  // 扫描模式
+  disposable = vscode.commands.registerCommand('kuan-vscode.goods3Dry', () => {
+    const filePath = vscode.window.activeTextEditor?.document.uri.fsPath
+    if (filePath) {
+      goods3Command(`-d ${filePath}`)
+    } else {
+      vscode.window.showWarningMessage('没有找到活跃文件')
+    }
+  })
+  context.subscriptions.push(disposable);
+
+  vscode.window.onDidCloseTerminal(term => terminalMapping.delete(term.name));
 }
 
-// this method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() {
+  console.log('deactivate')
+}

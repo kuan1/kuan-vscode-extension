@@ -7,10 +7,10 @@ vsce publish
 ```
 
 ## 登录
-```vsce
+```bash
 vsce login
 ```
 
-
 ## 官方文档
 [查看](https://code.visualstudio.com/api/get-started/your-first-extension)
+[登录token](https://dev.azure.com/luzhongkuan/_usersSettings/tokens)
