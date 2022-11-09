@@ -12,10 +12,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:kuan-vscode.helloWorld",
-    "onCommand:kuan-vscode.goods3",
-    "onCommand:kuan-vscode.goods3TransofromFolder",
-    "onCommand:kuan-vscode.goods3Dry"
+    "onCommand:kuan-vscode.helloWorld"
   ],
   "main": "./dist/extension.js",
   "license": "MIT",
@@ -24,18 +21,6 @@
       {
         "command": "kuan-vscode.helloWorld",
         "title": "Hello World"
-      },
-      {
-        "command": "kuan-vscode.goods3",
-        "title": "goods3:transform auto dependencies"
-      },
-      {
-        "command": "kuan-vscode.goods3TransofromFolder",
-        "title": "goods3:transform from folder"
-      },
-      {
-        "command": "kuan-vscode.goods3Dry",
-        "title": "goods3:dry"
       }
     ],
     "snippets": [
