@@ -77,5 +77,7 @@ hello extension, this is myself habit.
 
 | prefix     | body                 |
 | --------   | -------------------- |
-| `c`        | `console.log($1)`    |
+| `clg`        | `console.log($1)`    |
+| `clo`        | `console.log('$1', $1)`    |
+| `clj`        | `console.log('${1:first}', JSON.stringify(${1:first}, null, 2))`    |
 | `vuesetup` | `sfc setup script`   |
