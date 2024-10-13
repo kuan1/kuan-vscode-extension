@@ -11,18 +11,11 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:kuan-vscode.helloWorld"
-  ],
+  "activationEvents": [],
   "main": "./dist/extension.js",
   "license": "MIT",
   "contributes": {
-    "commands": [
-      {
-        "command": "kuan-vscode.helloWorld",
-        "title": "Hello World"
-      }
-    ],
+    "commands": [],
     "snippets": [
       {
         "language": "javascriptreact",
@@ -51,14 +44,6 @@
     ],
     "keybindings": [
       {
-        "key": "shift+cmd+k",
-        "command": "git.sync"
-      },
-      {
-        "key": "cmd+r",
-        "command": "editor.action.startFindReplaceAction"
-      },
-      {
         "key": "cmd+d",
         "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
@@ -66,42 +51,6 @@
       {
         "key": "cmd+s",
         "command": "workbench.action.files.saveAll"
-      },
-      {
-        "key": "alt+cmd+s",
-        "command": "workbench.action.files.save"
-      },
-      {
-        "command": "workbench.action.openEditorAtIndex1",
-        "key": "alt+1",
-        "mac": "alt+1"
-      },
-      {
-        "command": "workbench.action.openEditorAtIndex2",
-        "key": "alt+2",
-        "mac": "alt+2"
-      },
-      {
-        "command": "workbench.action.openEditorAtIndex3",
-        "key": "alt+3",
-        "mac": "alt+3"
-      },
-      {
-        "command": "workbench.action.openEditorAtIndex4",
-        "key": "alt+4",
-        "mac": "alt+4"
-      },
-      {
-        "key": "shift+alt+f",
-        "command": "-editor.action.formatDocument"
-      },
-      {
-        "key": "shift+alt+f",
-        "command": "-editor.action.formatDocument.none"
-      },
-      {
-        "key": "shift+alt+f",
-        "command": "eslint.executeAutofix"
       }
     ]
   },

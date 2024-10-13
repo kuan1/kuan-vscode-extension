@@ -9,7 +9,7 @@
       "</template>",
       "",
       "<script lang=\"tsx\" setup>",
-      "import {$2} from 'vue'",
+      "  import {$2} from 'vue'",
       "",
       "</script>",
       "",
