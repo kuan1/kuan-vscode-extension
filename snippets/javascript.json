@@ -24,7 +24,7 @@
     "key": "tsrfce",
     "prefix": "tsrfce",
     "body": [
-      "import React from 'react'",
+      "import {} from 'react'",
       "",
       "type Props = {}",
       "",
@@ -43,7 +43,7 @@
     "key": "rfce",
     "prefix": "rfce",
     "body": [
-      "import React from 'react'",
+      "import {} from 'react'",
       "",
       "function ${1:${TM_FILENAME_BASE}}() {",
       "  return (",
