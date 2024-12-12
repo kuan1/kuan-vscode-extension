@@ -46,7 +46,7 @@
     "body": [
       "import {} from 'react'",
       "",
-      "function ${1:${TM_FILENAME_BASE}}() {",
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
       "  return (",
       "    <div>${1:first}</div>",
       "  )",
