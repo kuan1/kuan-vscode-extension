@@ -15,6 +15,22 @@ hello extension, this is myself habit.
   {
     "key": "cmd+s",
     "command": "workbench.action.files.saveAll"
+  },
+  {
+    "key": "cmd+[",
+    "command": "-editor.action.outdentLines"
+  },
+  {
+    "key": "cmd+]",
+    "command": "-editor.action.indentLines"
+  },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.navigateBackInEditLocations"
+  },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForwardInEditLocations"
   }
   ]
 }
