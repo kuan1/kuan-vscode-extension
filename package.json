@@ -3,7 +3,7 @@
   "displayName": "kuan vscode",
   "description": "hello vscode extension",
   "icon": "images/logo.jpeg",
-  "version": "0.0.17",
+  "version": "0.0.19",
   "publisher": "luzhongkuan",
   "engines": {
     "vscode": "^1.58.0"
@@ -11,11 +11,18 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:kuan-vscode.copyMousePosition"
+  ],
   "main": "./dist/extension.js",
   "license": "MIT",
   "contributes": {
-    "commands": [],
+    "commands": [
+      {
+        "command": "kuan-vscode.copyMousePosition",
+        "title": "Copy Mouse Position"
+      }
+    ],
     "snippets": [
       {
         "language": "javascriptreact",
@@ -67,6 +74,11 @@
       {
         "key": "cmd+]",
         "command": "workbench.action.navigateForwardInEditLocations"
+      },
+      {
+        "key": "cmd+alt+c",
+        "command": "kuan-vscode.copyMousePosition",
+        "when": "editorTextFocus"
       }
     ]
   },

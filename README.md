@@ -31,6 +31,11 @@ hello extension, this is myself habit.
   {
     "key": "cmd+]",
     "command": "workbench.action.navigateForwardInEditLocations"
+  },
+  {
+    "key": "cmd+alt+c",
+    "command": "kuan-vscode.copyMousePosition",
+    "when": "editorTextFocus"
   }
   ]
 }
